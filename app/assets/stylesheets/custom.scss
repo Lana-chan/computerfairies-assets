@@ -32,20 +32,22 @@ $radius: 10px;
 }
 
 @media screen and (min-width: 1025px) {
+  // padding acommodates margins for columns in >1025px mode
   .column-icon-clear {
     padding: 5px;
+  }
+
+  // wider drawer
+  .drawer {
+    width: 22% !important;
+    min-width: 330px !important;
+    max-width: 450px !important;
   }
 }
 
 .column {
   // fullscreen
   flex-grow: 1 !important;
-}
-
-.drawer {
-  width: 22% !important;
-  min-width: 330px !important;
-  max-width: 450px !important;
 }
 
 .notification__message {
@@ -101,10 +103,8 @@ $radius: 10px;
 // fix overflow on drawer__inner for box shadow
 .drawer__pager, .drawer__inner {
   overflow: visible;
-  overflow-y: visible;
+  overflow-y: auto;
 }
-
-
 
 // secondary colors
 .text-icon-button, .drawer .icon-button, .drawer .icon-button.inverted {
