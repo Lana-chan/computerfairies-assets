@@ -1,5 +1,3 @@
-@import 'application';
-
 // rounded edges
 $radius: 10px;
 
@@ -10,7 +8,7 @@ $radius: 10px;
 // button with proper accent and disabled
 .button {
   background-color: darken($accent, 3%);
-  color: $color5;
+  color: $white;
 
   &:hover, &:active, &:focus {
     background-color: lighten($accent, 7%);
@@ -67,8 +65,8 @@ $radius: 10px;
   border-bottom: 2px solid $prim3;
 
   &:focus, &:active {
-    color: $color5;
-    border-bottom-color: $color4;
+    color: $white;
+    border-bottom-color: $accent;
   }
 }*/
 
@@ -89,6 +87,12 @@ $radius: 10px;
       padding: 0;
       margin-right: 10px;
     }
+  }
+  
+  .column__wrapper .column {
+    padding: 0 !important;
+    margin-left: 5px;
+    margin-right: 10px;
   }
 }
 
@@ -133,18 +137,18 @@ $radius: 10px;
   border: 1px solid $sec2;
 
   strong {
-    color: $color5;
+    color: $white;
   }
 }
 
 .compose-form__modifiers {
   color: $sec1;
-  background: $color5;
+  background: $white;
 }
 
 .compose-form__buttons {
-  background: darken($color5, 8%);
-  box-shadow: inset 0 5px 5px rgba($color8, 0.05);
+  background: darken($white, 8%);
+  box-shadow: inset 0 5px 5px rgba($black, 0.05);
 }
 
 .compose-form__label {
@@ -158,7 +162,7 @@ $radius: 10px;
 }
 
 .compose-form__textarea, .follow-form__input {
-  background: $color5;
+  background: $white;
 
   &:disabled {
     background: $sec3;
@@ -169,7 +173,7 @@ $radius: 10px;
   color: $sec3;
 
   strong {
-    color: $color5;
+    color: $white;
   }
 }
 
@@ -184,13 +188,13 @@ $radius: 10px;
 
   &.light {
     &:before {
-      border-color: transparent transparent $color5 transparent;
+      border-color: transparent transparent $white transparent;
     }
   }
 
   & > ul {
     background: $sec3;
-    box-shadow: 0 0 15px rgba($color8, 0.4);
+    box-shadow: 0 0 15px rgba($black, 0.4);
   }
 
   & > ul > li > a {
@@ -198,8 +202,8 @@ $radius: 10px;
     color: $sec1;
 
     &:hover {
-      background: $color4;
-      color: $color8;
+      background: $accent;
+      color: $black;
     }
   }
 }
@@ -236,12 +240,12 @@ $radius: 10px;
 }
 
 .tabs-bar__link {
-  color: $color5;
+  color: $white;
   border-bottom: 2px solid lighten($sec1, 8%);
 
   &.active {
-    border-bottom: 2px solid $color4;
-    color: $color4;
+    border-bottom: 2px solid $accent;
+    color: $accent;
   }
 
   &:hover, &:focus, &:active {
@@ -261,7 +265,7 @@ $radius: 10px;
 
 .react-autosuggest__suggestion--focused {
   background: $accent;
-  color: $color5;
+  color: $white;
 }
 
 .autosuggest-textarea__textarea, .spoiler-input__input {
@@ -279,8 +283,8 @@ $radius: 10px;
   }
 
   &.selected {
-    background: $color4;
-    color: $color5;
+    background: $accent;
+    color: $white;
   }
 }
 
