@@ -5,7 +5,7 @@
 }
   
 // logo
-.landing-page .header .links .brand img {
+.landing-page .header .links .brand img, .logo-container h1 img {
   height: 80px;
 }
 
@@ -20,6 +20,7 @@ $radius: 10px;
 .drawer__header, .search__input, .drawer__inner, .column, .tabs-bar {
   border-radius: $radius;
 }
+
 .drawer__header {
   overflow: hidden;
 }
@@ -88,6 +89,11 @@ $radius: 10px;
     border-bottom-color: $accent;
   }
 }*/
+
+// reply readability
+.reply-indicator__content a {
+  color: $ui-secondary-color !important;
+}
 
 // fix column spacing in case of box shadow
 @media screen and (min-width: 1025px) {
@@ -392,9 +398,4 @@ $radius: 10px;
 
 .loading-bar {
   background-color: $accent;
-}
-
-// images
-.getting-started {
-  background: image-url('mastodon-getting-started.png') no-repeat 0 100% local;
 }

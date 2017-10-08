@@ -28,10 +28,7 @@ $accent:   #fa41e2 !default; // vibrant (accent)
 $disabled: #ba82b2 !default; // vibrant (disabled)
 
 // drawer
-//$sec1: #0A3422 !default; // darkest green
-//$sec2: #48A47D !default; // lighter green
-//$sec3: #86C8AC !default; // lightest green
-$sec1: #085539 !default; // darkest green
+$sec1: #053825 !default; // darkest green
 $sec2: #108158 !default; // lighter green
 $sec3: #07e4b3 !default; // lightest green
 
@@ -46,9 +43,10 @@ $sec3: #07e4b3 !default; // lightest green
 //$ui-base-lighter-color: lighten($ui-base-color, 26%) !default; // Lighter darkest
 //$ui-primary-color: #C3568F !default;     // Lighter
 //$ui-secondary-color: #DF95BC !default;   // Lightest
-$ui-highlight-color: $accent !default;   // Vibrant
-//>>>>>>> 0551dd4
-$ui-base-color: #2a0530 !default;        // Darkest
-$ui-base-lighter-color: lighten($ui-base-color, 26%) !default; // Lighter darkest
-$ui-primary-color: #732789 !default;     // Lighter
+//$ui-highlight-color: $accent !default;   // Vibrant
+
+$ui-base-color: #0f0111 !default;        // Darkest
+$ui-base-lighter-color: #620b70 !default; // Lighter darkest
+$ui-primary-color: #8c2aa8 !default;     // Lighter
 $ui-secondary-color: #d495df !default;   // Lightest
+$ui-highlight-color: $accent !default;   // Vibrant
